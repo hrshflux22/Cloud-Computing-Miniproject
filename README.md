@@ -1,11 +1,21 @@
 
-# Cloud Computing Mini-Project
-
-A modern, serverless web application powered by **React (Vite)** on the frontend and **AWS (Lambda, DynamoDB, SES/EmailJS, CloudFront, S3)** on the backend. This project demonstrates full-stack cloud deployment, serverless RESTful architectures, and secure IAM credential management.
+# Employee Management System
 
 ---
 
-## Architecture Overview
+## 📌 Table of Contents
+
+* [Architecture Overview](https://www.google.com/search?q=%23-architecture-overview)
+* [Prerequisites](https://www.google.com/search?q=%23-prerequisites)
+* [Interactive Project Tree](https://www.google.com/search?q=%23-interactive-project-tree)
+* [Getting Started](https://www.google.com/search?q=%23-getting-started)
+* [Infrastructure & Setup Guides](https://www.google.com/search?q=%23-infrastructure--setup-guides)
+* [Deployment Options](https://www.google.com/search?q=%23-deployment-options)
+* [Interactive Execution Tracker](https://www.google.com/search?q=%23-interactive-execution-tracker)
+
+---
+
+## 🏗 Architecture Overview
 
 ```
 [ Frontend (React + Vite) ] 
@@ -19,26 +29,20 @@ A modern, serverless web application powered by **React (Vite)** on the frontend
 
 ---
 
-## Tech Stack & Prerequisites
+## ⚡ Prerequisites
 
-### **Tech Stack**
+Before running or deploying this application, ensure you have the following installed and configured:
 
-* **Frontend:** React, Vite, Lucide React, Radix UI, Tailwind CSS, Sonner, EmailJS
-* **Backend / Serverless:** Python (`aws/lambda/handler.py`), AWS Lambda
-* **Database:** AWS DynamoDB
-* **Hosting & Infrastructure:** AWS S3, AWS CloudFront, Netlify
-* **CLI & Automation:** AWS CLI, PowerShell / Bash deployment scripts
-
-### **Prerequisites**
-
-* [Node.js](https://nodejs.org/) (v18 or higher)
-* [Python 3.x](https://www.python.org/)
-* [AWS CLI](https://www.google.com/search?q=INSTALL_AWS_CLI.md) installed and configured with appropriate IAM permissions
-* AWS Account with access to S3, DynamoDB, Lambda, and IAM
+| Tool | Version / Requirement | Link |
+| --- | --- | --- |
+| **Node.js** | `v18.0.0` or higher | [Download](https://www.google.com/search?q=https://nodejs.org/) |
+| **Python** | `3.x` | [Download](https://www.python.org/) |
+| **AWS CLI** | Configured with IAM credentials | [Installation Guide](https://www.google.com/search?q=INSTALL_AWS_CLI.md) |
+| **AWS Account** | Access to S3, DynamoDB, Lambda, IAM | [AWS Console](https://www.google.com/search?q=https://aws.amazon.com/console/) |
 
 ---
 
-## Project Structure
+## 📂 Interactive Project Tree
 
 ```text
 .
@@ -67,29 +71,24 @@ A modern, serverless web application powered by **React (Vite)** on the frontend
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
-### 1. Environment Setup
-
-Clone the repository and copy the example environment file:
+Copy the template environment file to create your local `.env`:
 
 ```bash
 cp .env.example .env
 
 ```
 
-Open `.env` and populate your specific API keys and AWS identifiers. Refer to `API_KEY_SETUP.md` for details.
-
-### 2. Install Dependencies
+> [!NOTE]
+> Populate your specific API keys and AWS identifiers in `.env`. Refer to [`API_KEY_SETUP.md`](https://www.google.com/search?q=API_KEY_SETUP.md) for details.
 
 ```bash
 npm install
 
 ```
 
-### 3. Run Locally
-
-Start the development server with Vite:
+Launch the Vite development server:
 
 ```bash
 npm run dev
@@ -98,52 +97,49 @@ npm run dev
 
 ---
 
-## Cloud Infrastructure & Setup Guides
+## 📚 Infrastructure & Setup Guides
 
-For detailed step-by-step setup instructions, refer to the documentation files included in this project:
+Click on any guide below to review detailed deployment instructions:
 
-* **AWS CLI:** See [`INSTALL_AWS_CLI.md`](https://www.google.com/search?q=INSTALL_AWS_CLI.md) for installation and credentials setup.
-* **DynamoDB:** Follow [`DYNAMODB_SETUP.md`](https://www.google.com/search?q=DYNAMODB_SETUP.md) or [`QUICKSTART_DYNAMODB.md`](https://www.google.com/search?q=QUICKSTART_DYNAMODB.md) to initialize the database tables and apply policies in `aws/iam/`.
-* **Lambda Function:** Deploy `aws/lambda/handler.py` using the execution policy in `aws/iam/lambda_dynamodb_policy.json`.
-* **Email Service:** Configure email alerts via EmailJS/SES using [`EMAILJS_SETUP.md`](https://www.google.com/search?q=EMAILJS_SETUP.md).
+* 📄 **[AWS CLI Configuration Guide](https://www.google.com/search?q=INSTALL_AWS_CLI.md)** — Step-by-step credentials and CLI setup.
+* 📄 **[DynamoDB Database Setup](https://www.google.com/search?q=DYNAMODB_SETUP.md)** | **[Quickstart](https://www.google.com/search?q=QUICKSTART_DYNAMODB.md)** — Provision database tables and apply policies from `aws/iam/`.
+* 📄 **[Lambda Function Deployment](https://www.google.com/search?q=AWS_DEPLOYMENT_GUIDE.md)** — Deploy `aws/lambda/handler.py` with `aws/iam/lambda_dynamodb_policy.json`.
+* 📄 **[EmailJS Integration](https://www.google.com/search?q=EMAILJS_SETUP.md)** — Configure notifications and messaging handlers.
 
 ---
 
-## Deployment
+## 🛠 Deployment Options
 
-### **Option 1: Automated Deployment (AWS S3 & CloudFront)**
+### **Option A: Automated Script Deployment (AWS S3 + CloudFront)**
 
-Run the appropriate deployment script for your environment:
+Select the command corresponding to your operating system:
 
-* **Linux / macOS:**
 ```bash
 chmod +x deploy.sh
 ./deploy.sh
 
 ```
 
-
-* **Windows (PowerShell):**
 ```powershell
 .\deploy.ps1
 
 ```
 
+---
 
+### **Option B: Frontend Deployment on Netlify**
 
-For a manual walkthrough of CloudFront CDN configuration and S3 policy attachment, refer to [`AWS_DEPLOYMENT_GUIDE.md`](https://www.google.com/search?q=AWS_DEPLOYMENT_GUIDE.md).
-
-### **Option 2: Frontend Deployment on Netlify**
-
-To host the frontend on Netlify, consult [`DEPLOY_NETLIFY.md`](https://www.google.com/search?q=DEPLOY_NETLIFY.md).
+For step-by-step instructions on linking your repository and deploying the frontend via Netlify, refer to [`DEPLOY_NETLIFY.md`](https://www.google.com/search?q=DEPLOY_NETLIFY.md).
 
 ---
 
-## Execution Checklist
+## ✅ Interactive Execution Tracker
 
-1. [ ] Install dependencies (`npm install`).
-2. [ ] Configure local environment parameters in `.env`.
-3. [ ] Provision the DynamoDB table and attach IAM policies.
-4. [ ] Deploy the AWS Lambda function (`aws/lambda/handler.py`).
-5. [ ] Build and deploy the frontend using `./deploy.sh` or `.\deploy.ps1`.
-6. [ ] Verify CloudFront endpoint routing and service integration.
+Track your progress setting up and deploying the project:
+
+* [ ] **Step 1:** Install Node.js dependencies (`npm install`).
+* [ ] **Step 2:** Populate local variables in `.env` (Reference: [`API_KEY_SETUP.md`](https://www.google.com/search?q=API_KEY_SETUP.md)).
+* [ ] **Step 3:** Provision DynamoDB table and set IAM permissions.
+* [ ] **Step 4:** Deploy AWS Lambda backend logic (`aws/lambda/handler.py`).
+* [ ] **Step 5:** Build and deploy static assets using `./deploy.sh` or `.\deploy.ps1`.
+* [ ] **Step 6:** Validate CloudFront distribution and test endpoints.
