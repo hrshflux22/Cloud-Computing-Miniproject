@@ -12,7 +12,7 @@
 [![EmailJS](https://img.shields.io/badge/EmailJS-Notifications-FF6C37.svg)](https://www.emailjs.com/)
 [![Netlify](https://img.shields.io/badge/Netlify-Deployment-00C7B7.svg)](https://www.netlify.com/)
 
-An end-to-end Serverless Cloud Application & Deployment Pipeline designed for reliable web performance, automated infrastructure orchestration, and secure event-driven workflows. Built on a high-performance React (Vite) frontend and an AWS (Lambda, DynamoDB, CloudFront, S3) serverless backend, this project processes real-time user requests through Python microservices, manages persistence with NoSQL data structures, and orchestrates global asset distribution through CloudFront CDN caching and automated deployment scripts.
+**An end-to-end Serverless Cloud Application & Deployment Pipeline designed for reliable web performance, automated infrastructure orchestration, and secure event-driven workflows. Built on a high-performance React (Vite) frontend and an AWS (Lambda, DynamoDB, CloudFront, S3) serverless backend, this project processes real-time user requests through Python microservices, manages persistence with NoSQL data structures, and orchestrates global asset distribution through CloudFront CDN caching and automated deployment scripts.**
 ---
 
 ## 📌 Table of Contents
