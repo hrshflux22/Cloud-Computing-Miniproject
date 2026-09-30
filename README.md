@@ -1,6 +1,18 @@
 
 # Employee Management System
 
+[![React](https://img.shields.io/badge/React-18.x-61DAFB.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-Build--Tool-646CFF.svg)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind--CSS-UI--Styling-38B2AC.svg)](https://tailwindcss.com/)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB.svg)](https://www.python.org/)
+[![AWS Lambda](https://img.shields.io/badge/AWS--Lambda-Serverless-FF9900.svg)](https://aws.amazon.com/lambda/)
+[![AWS DynamoDB](https://img.shields.io/badge/AWS--DynamoDB-NoSQL--Database-4053D6.svg)](https://aws.amazon.com/dynamodb/)
+[![AWS S3](https://img.shields.io/badge/AWS--S3-Object--Storage-569A31.svg)](https://aws.amazon.com/s3/)
+[![AWS CloudFront](https://img.shields.io/badge/AWS--CloudFront-CDN-8C4FFF.svg)](https://aws.amazon.com/cloudfront/)
+[![EmailJS](https://img.shields.io/badge/EmailJS-Notifications-FF6C37.svg)](https://www.emailjs.com/)
+[![Netlify](https://img.shields.io/badge/Netlify-Deployment-00C7B7.svg)](https://www.netlify.com/)
+
+An end-to-end Serverless Cloud Application & Deployment Pipeline designed for reliable web performance, automated infrastructure orchestration, and secure event-driven workflows. Built on a high-performance React (Vite) frontend and an AWS (Lambda, DynamoDB, CloudFront, S3) serverless backend, this project processes real-time user requests through Python microservices, manages persistence with NoSQL data structures, and orchestrates global asset distribution through CloudFront CDN caching and automated deployment scripts.
 ---
 
 ## 📌 Table of Contents
